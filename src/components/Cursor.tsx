@@ -27,8 +27,14 @@ function Cursor() {
 
   return (
     <div>
-      <div className="cursor" ref={cursor_ref} />
-      <div className="cursor-follow" ref={cursor_follower_ref} />
+      <div
+        className="fixed bg-white rounded-full w-4 h-4 -left-4 -top-4 scale-100 z-10000"
+        ref={cursor_ref}
+      />
+      <div
+        className="fixed border border-white h-12 w-12 -left-8 -top-8 rounded-full select-none pointer-events-none scale-100 z-10000"
+        ref={cursor_follower_ref}
+      />
     </div>
   );
 }

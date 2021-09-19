@@ -6,6 +6,9 @@ module.exports = {
       zIndex: {
         10000: 10000,
       },
+      height: {
+        0.18: "0.18rem",
+      },
     },
   },
   variants: {

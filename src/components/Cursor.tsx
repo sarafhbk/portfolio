@@ -1,10 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import gsap, { Back, Power4 } from "gsap";
+import React, { MutableRefObject, useEffect } from "react";
+import gsap, { Power4 } from "gsap";
 
-function Cursor() {
-  const cursor_ref = useRef<HTMLDivElement>(null);
-  const cursor_follower_ref = useRef<HTMLDivElement>(null);
-
+function Cursor({
+  cursor_ref,
+  cursor_follower_ref,
+}: {
+  cursor_ref: MutableRefObject<HTMLDivElement>;
+  cursor_follower_ref: MutableRefObject<HTMLDivElement>;
+}) {
   useEffect(() => {
     window.addEventListener("mousemove", (event: MouseEvent) => {
       gsap.to(cursor_ref?.current, {
@@ -17,13 +20,13 @@ function Cursor() {
         duration: 0.7,
         x: event?.clientX,
         y: event?.clientY,
-        ease: Back.easeOut.config(1.7),
+        ease: Power4.easeOut,
       });
     });
     return () => {
       window.removeEventListener("mousemove", () => {});
     };
-  }, []);
+  }, [cursor_follower_ref, cursor_ref]);
 
   return (
     <div>

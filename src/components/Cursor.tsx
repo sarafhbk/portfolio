@@ -31,7 +31,7 @@ function Cursor({
   return (
     <div>
       <div
-        className="fixed bg-white rounded-full w-4 h-4 -left-4 -top-4 scale-100 z-10000"
+        className="fixed bg-white rounded-full w-3 h-3 -left-3 -top-3 scale-100 z-10000"
         ref={cursor_ref}
       />
       <div

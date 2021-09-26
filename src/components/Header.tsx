@@ -1,10 +1,6 @@
-import React, {
-  MouseEvent,
-  MutableRefObject,
-  useEffect,
-  useState,
-} from "react";
+import React, { MouseEvent, MutableRefObject, useEffect } from "react";
 import gsap, { Power2 } from "gsap";
+import useMenuState from "../hooks/useMenuState";
 
 function Header({
   menu_container_ref,
@@ -21,7 +17,7 @@ function Header({
   cursor_ref: MutableRefObject<HTMLDivElement>;
   cursor_follower_ref: MutableRefObject<HTMLDivElement>;
 }) {
-  const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const { openMenu, setOpenMenu } = useMenuState();
 
   useEffect(() => {
     gsap.to(".menu-button span.bg-black:nth-child(1)", {
@@ -134,7 +130,7 @@ function Header({
   }
 
   return (
-    <div className="fixed top-0 right-0 left-0 flex items-center justify-between h-32 w-full max-w-full wrapper">
+    <div className="fixed z-10000 top-0 right-0 left-0 flex items-center justify-between h-32 w-full max-w-full wrapper">
       <div
         ref={logo_container_ref}
         className="flex items-center justify-center h-full pl-8 pr-12 -ml-8"
@@ -159,10 +155,9 @@ function Header({
           onClick={() => setOpenMenu(!openMenu)}
         >
           <span className="w-full h-full flex items-center justify-center">
-            <span className="relative w-5 h-5">
+            <span className="relative w-5 h-3">
               <span className="absolute w-full h-0.18 bg-black rounded-lg block"></span>
               <span className="absolute w-full h-0.18 bg-black rounded-lg top-1 block"></span>
-              <span className="absolute w-full h-0.18 bg-black rounded-lg top-4 block"></span>
             </span>
           </span>
         </button>

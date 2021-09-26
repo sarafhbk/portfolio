@@ -1,6 +1,7 @@
 import React, { MutableRefObject, useRef } from "react";
 import Cursor from "./components/Cursor";
 import Header from "./components/Header";
+import Landing from "./screens/home/sections/Landing";
 
 const App = () => {
   const cursor_ref = useRef<HTMLDivElement>(
@@ -18,11 +19,21 @@ const App = () => {
     null
   ) as MutableRefObject<HTMLButtonElement>;
 
+  const logo_container_ref = useRef<HTMLDivElement>(
+    null
+  ) as MutableRefObject<HTMLDivElement>;
+
+  const logo_ref = useRef<HTMLHeadingElement>(
+    null
+  ) as MutableRefObject<HTMLHeadingElement>;
+
   return (
-    <div>
+    <div className="wrapper h-full">
       <Header
         menu_container_ref={menu_container_ref}
         menu_button_ref={menu_button_ref}
+        logo_container_ref={logo_container_ref}
+        logo_ref={logo_ref}
         cursor_ref={cursor_ref}
         cursor_follower_ref={cursor_follower_ref}
       />
@@ -30,6 +41,7 @@ const App = () => {
         cursor_ref={cursor_ref}
         cursor_follower_ref={cursor_follower_ref}
       />
+      <Landing />
     </div>
   );
 };

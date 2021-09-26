@@ -8,6 +8,7 @@ module.exports = {
       },
       height: {
         0.18: "0.18rem",
+        pageHeightMinusHeader: "calc(100% - 8rem)",
       },
     },
   },

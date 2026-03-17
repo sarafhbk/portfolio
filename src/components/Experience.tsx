@@ -1,16 +1,54 @@
 'use client';
 
+import { useEffect, useRef, useState } from "react";
 import { experiences } from "@/lib/data";
 import AnimateIn from "./AnimateIn";
+import WordReveal from "./WordReveal";
 
-function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
+function ExperienceCard({ exp, delay = 0 }: { exp: typeof experiences[0]; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.06, rootMargin: "0px 0px -40px 0px" }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const cardEnter: React.CSSProperties = {
+    opacity: visible ? 1 : 0,
+    transform: visible ? "translateY(0) translateZ(0)" : "translateY(48px) translateZ(0)",
+    transition: `opacity 0.9s ease ${delay}ms, transform 1.1s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms, border-color 0.3s ease`,
+    willChange: "transform, opacity",
+  };
+
+  const fade = (extra: number): React.CSSProperties => ({
+    opacity: visible ? 1 : 0,
+    transform: visible ? "translateY(0)" : "translateY(14px)",
+    transition: `opacity 0.65s ease ${delay + 350 + extra}ms, transform 0.65s cubic-bezier(0.22, 1, 0.36, 1) ${delay + 350 + extra}ms`,
+  });
+
   return (
     <div
-      className="relative group transition-all duration-300"
+      ref={ref}
+      className="relative group"
       style={{
         background: "var(--surface)",
         border: "1px solid var(--border)",
         padding: "1.75rem",
+        ...cardEnter,
       }}
       onMouseEnter={(e) => {
         (e.currentTarget as HTMLDivElement).style.borderColor = "var(--border-bright)";
@@ -26,7 +64,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
       />
 
       {/* Project type + period row */}
-      <div className="flex items-center justify-between gap-3 mb-3 flex-wrap">
+      <div className="flex items-center justify-between gap-3 mb-3 flex-wrap" style={fade(0)}>
         <span
           style={{
             display: "inline-flex",
@@ -65,6 +103,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
           lineHeight: 1.05,
           letterSpacing: "-0.01em",
           marginBottom: "0.6rem",
+          ...fade(60),
         }}
       >
         {exp.project}
@@ -78,13 +117,14 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
           color: "var(--text-tertiary)",
           letterSpacing: "0.04em",
           marginBottom: "0.85rem",
+          ...fade(110),
         }}
       >
         {exp.company}
       </p>
 
       {/* Role badge */}
-      <div className="mb-4">
+      <div className="mb-4" style={fade(160)}>
         <span
           style={{
             display: "inline-flex",
@@ -114,6 +154,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
           color: "var(--text-secondary)",
           lineHeight: 1.7,
           marginBottom: "1rem",
+          ...fade(210),
         }}
       >
         {exp.description}
@@ -121,7 +162,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
 
       {/* Highlights */}
       {exp.highlights.length > 0 && (
-        <ul className="space-y-1.5 mb-5">
+        <ul className="space-y-1.5 mb-5" style={fade(270)}>
           {exp.highlights.map((h, hi) => (
             <li
               key={hi}
@@ -158,7 +199,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
       {/* Stack */}
       <div
         className="flex flex-wrap gap-1.5 pt-4"
-        style={{ borderTop: "1px solid var(--border)" }}
+        style={{ borderTop: "1px solid var(--border)", ...fade(330) }}
       >
         {exp.stack.map((tech) => (
           <span
@@ -193,7 +234,6 @@ export default function Experience() {
 
   const years = Object.keys(grouped).sort((a, b) => parseInt(b) - parseInt(a));
 
-  // Flatten all entries with global index for left/right alternation
   const allEntries: { exp: typeof experiences[0]; year: string; globalIdx: number }[] = [];
   years.forEach((year) => {
     grouped[year].forEach((exp) => {
@@ -216,20 +256,9 @@ export default function Experience() {
           <AnimateIn delay={100}>
             <span className="section-label mb-3 block">Experience</span>
           </AnimateIn>
-          <AnimateIn delay={200}>
-            <h2 className="section-title">
-              6+ Years of{" "}
-              <em
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontStyle: "italic",
-                  color: "var(--accent)",
-                }}
-              >
-                shipping
-              </em>
-            </h2>
-          </AnimateIn>
+          <h2 className="section-title">
+            <WordReveal text="6+ Years of shipping" delay={200} stagger={80} accentWords={["shipping"]} />
+          </h2>
         </div>
       </div>
 
@@ -250,10 +279,9 @@ export default function Experience() {
 
           return (
             <div key={year} className="mb-4">
-              {/* Year label — centered on the line */}
+              {/* Year label */}
               <AnimateIn delay={yi * 60}>
                 <div className="relative flex justify-center items-center mb-8">
-                  {/* Dot on the line */}
                   <div
                     className="hidden md:block absolute left-1/2 z-10"
                     style={{
@@ -290,17 +318,15 @@ export default function Experience() {
                 {grouped[year].map((exp, ei) => {
                   const globalIdx = yearStartIdx + ei;
                   const isLeft = globalIdx % 2 === 0;
+                  const cardDelay = ei * 80;
 
                   return (
-                    <AnimateIn key={exp.id} delay={yi * 60 + ei * 100 + 80}>
+                    <div key={exp.id}>
                       {/* Desktop: alternating layout */}
                       <div className="hidden md:grid grid-cols-[1fr_60px_1fr] items-start gap-0">
-                        {/* Left slot */}
                         <div className={isLeft ? "pr-8" : ""}>
-                          {isLeft && <ExperienceCard exp={exp} />}
+                          {isLeft && <ExperienceCard exp={exp} delay={cardDelay} />}
                         </div>
-
-                        {/* Center: connector dot */}
                         <div className="flex justify-center pt-6">
                           <div
                             style={{
@@ -313,18 +339,16 @@ export default function Experience() {
                             }}
                           />
                         </div>
-
-                        {/* Right slot */}
                         <div className={!isLeft ? "pl-8" : ""}>
-                          {!isLeft && <ExperienceCard exp={exp} />}
+                          {!isLeft && <ExperienceCard exp={exp} delay={cardDelay} />}
                         </div>
                       </div>
 
                       {/* Mobile: single column */}
                       <div className="md:hidden">
-                        <ExperienceCard exp={exp} />
+                        <ExperienceCard exp={exp} delay={cardDelay} />
                       </div>
-                    </AnimateIn>
+                    </div>
                   );
                 })}
               </div>

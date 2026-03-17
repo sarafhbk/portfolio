@@ -1,5 +1,6 @@
 import { skillCategories } from "@/lib/data";
 import AnimateIn from "./AnimateIn";
+import WordReveal from "./WordReveal";
 
 const techMarqueeItems = [
   "React.js",
@@ -42,20 +43,9 @@ export default function Skills() {
           <AnimateIn delay={100}>
             <span className="section-label mb-3 block">Expertise</span>
           </AnimateIn>
-          <AnimateIn delay={200}>
-            <h2 className="section-title">
-              Tools of the{" "}
-              <em
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontStyle: "italic",
-                  color: "var(--accent)",
-                }}
-              >
-                trade
-              </em>
-            </h2>
-          </AnimateIn>
+          <h2 className="section-title">
+            <WordReveal text="Tools of the trade" delay={200} stagger={80} accentWords={["trade"]} />
+          </h2>
         </div>
       </div>
 

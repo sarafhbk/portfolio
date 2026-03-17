@@ -6,23 +6,19 @@ export default function Loading() {
     >
       {/* Logo mark */}
       <div className="mb-12">
-        <div className="flex items-baseline gap-2">
-          <span
-            className="font-display text-5xl font-semibold text-text-primary"
-            style={{
-              fontFamily: "var(--font-cormorant, Georgia, serif)",
-              lineHeight: 1,
-            }}
-          >
-            S
-          </span>
-          <span
-            className="font-mono text-sm text-accent tracking-widest uppercase"
-            style={{ fontFamily: "var(--font-dm-mono, monospace)" }}
-          >
-            .dev
-          </span>
-        </div>
+        <span
+          style={{
+            fontFamily: "var(--font-cormorant, Georgia, serif)",
+            fontSize: "clamp(2.2rem, 5vw, 3rem)",
+            fontWeight: 600,
+            color: "var(--text-primary)",
+            letterSpacing: "0.22em",
+            textTransform: "uppercase",
+            lineHeight: 1,
+          }}
+        >
+          SARAF
+        </span>
       </div>
 
       {/* Loader bar */}

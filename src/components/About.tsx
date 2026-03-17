@@ -2,6 +2,7 @@
 
 import { profile, education, languages } from "@/lib/data";
 import AnimateIn from "./AnimateIn";
+import WordReveal from "./WordReveal";
 
 const marqueeItems = [
   "FRONTEND",
@@ -32,21 +33,10 @@ export default function About() {
           <AnimateIn delay={100}>
             <span className="section-label mb-3 block">About Me</span>
           </AnimateIn>
-          <AnimateIn delay={200}>
-            <h2 className="section-title">
-              Crafting digital
-              <br />
-              <em
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontStyle: "italic",
-                  color: "var(--accent)",
-                }}
-              >
-                experiences
-              </em>
-            </h2>
-          </AnimateIn>
+          <h2 className="section-title">
+            <WordReveal text="Crafting digital" delay={200} stagger={80} />
+            <WordReveal text="experiences" delay={360} accentWords={["experiences"]} />
+          </h2>
         </div>
       </div>
 
@@ -305,53 +295,16 @@ export default function About() {
 
         {/* Right col: current status */}
         <div className="lg:col-span-2">
-          <AnimateIn delay={200}>
-            <div
-              className="relative p-8 space-y-8"
-              style={{
-                background: "var(--surface)",
-                border: "1px solid var(--border-bright)",
-              }}
-            >
-              {/* Accent corner marks */}
-              <div
-                className="absolute top-0 left-0"
-                style={{
-                  width: "20px",
-                  height: "20px",
-                  borderTop: "2px solid var(--accent)",
-                  borderLeft: "2px solid var(--accent)",
-                }}
-              />
-              <div
-                className="absolute top-0 right-0"
-                style={{
-                  width: "20px",
-                  height: "20px",
-                  borderTop: "2px solid var(--accent)",
-                  borderRight: "2px solid var(--accent)",
-                }}
-              />
-              <div
-                className="absolute bottom-0 left-0"
-                style={{
-                  width: "20px",
-                  height: "20px",
-                  borderBottom: "2px solid var(--accent)",
-                  borderLeft: "2px solid var(--accent)",
-                }}
-              />
-              <div
-                className="absolute bottom-0 right-0"
-                style={{
-                  width: "20px",
-                  height: "20px",
-                  borderBottom: "2px solid var(--accent)",
-                  borderRight: "2px solid var(--accent)",
-                }}
-              />
-
-              {/* Current Status */}
+          <div
+            className="relative p-8 space-y-8"
+            style={{
+              background: "var(--surface)",
+              border: "1px solid var(--border-bright)",
+              boxShadow: "0 60px 180px rgba(255,255,255,0.07), 0 30px 80px rgba(255,255,255,0.04), 0 0 60px rgba(255,255,255,0.03), inset 0 1px 0 rgba(255,255,255,0.06)",
+            }}
+          >
+            {/* Current Status */}
+            <AnimateIn delay={200}>
               <div>
                 <span className="section-label block mb-3">Current Status</span>
                 <div className="flex items-center gap-3">
@@ -371,10 +324,12 @@ export default function About() {
                   </span>
                 </div>
               </div>
+            </AnimateIn>
 
-              <div className="divider" />
+            <div className="divider" />
 
-              <div className="space-y-5">
+            <div className="space-y-5">
+              <AnimateIn delay={280}>
                 <div>
                   <span className="section-label block mb-1.5">Role</span>
                   <p
@@ -397,6 +352,8 @@ export default function About() {
                     F22 Labs
                   </p>
                 </div>
+              </AnimateIn>
+              <AnimateIn delay={340}>
                 <div>
                   <span className="section-label block mb-1.5">Location</span>
                   <p
@@ -419,6 +376,8 @@ export default function About() {
                     Open to remote globally
                   </p>
                 </div>
+              </AnimateIn>
+              <AnimateIn delay={400}>
                 <div>
                   <span className="section-label block mb-1.5">Speciality</span>
                   <p
@@ -432,10 +391,12 @@ export default function About() {
                     Frontend Architecture · UI/UX Leadership · React Ecosystem
                   </p>
                 </div>
-              </div>
+              </AnimateIn>
+            </div>
 
-              <div className="divider" />
+            <div className="divider" />
 
+            <AnimateIn delay={460}>
               <div>
                 <span className="section-label block mb-3">Contact</span>
                 <a
@@ -452,8 +413,8 @@ export default function About() {
                   {profile.email}
                 </a>
               </div>
-            </div>
-          </AnimateIn>
+            </AnimateIn>
+          </div>
         </div>
       </div>
 

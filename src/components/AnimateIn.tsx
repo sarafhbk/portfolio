@@ -43,13 +43,15 @@ export default function AnimateIn({
   return (
     <Element
       ref={ref}
-      className={`${className} ${visible ? "animate-in-visible" : "animate-in-hidden"}`}
-      style={{
-        ...style,
-        transitionDelay: visible ? `${delay}ms` : "0ms",
-      }}
+      className={className}
+      style={{ ...style, overflow: "clip", paddingBottom: "0.15em", marginBottom: "-0.15em" }}
     >
-      {children}
+      <div
+        className={`mask-reveal-inner ${visible ? "mask-reveal-inner--visible" : ""}`}
+        style={{ transitionDelay: visible ? `${delay}ms` : "0ms" }}
+      >
+        {children}
+      </div>
     </Element>
   );
 }

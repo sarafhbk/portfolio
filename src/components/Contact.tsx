@@ -4,6 +4,7 @@ import { useActionState } from "react";
 import { sendContact } from "@/app/actions";
 import { profile } from "@/lib/data";
 import AnimateIn from "./AnimateIn";
+import WordReveal from "./WordReveal";
 
 const initialState = { success: false, error: "" };
 
@@ -29,20 +30,9 @@ export default function Contact() {
           <AnimateIn delay={100}>
             <span className="section-label mb-3 block">Contact</span>
           </AnimateIn>
-          <AnimateIn delay={200}>
-            <h2 className="section-title">
-              Let&apos;s build something{" "}
-              <em
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontStyle: "italic",
-                  color: "var(--accent)",
-                }}
-              >
-                great
-              </em>
-            </h2>
-          </AnimateIn>
+          <h2 className="section-title">
+            <WordReveal text="Let's build something great" delay={200} stagger={80} accentWords={["great"]} />
+          </h2>
         </div>
       </div>
 

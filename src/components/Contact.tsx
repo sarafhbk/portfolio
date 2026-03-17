@@ -22,11 +22,11 @@ export default function Contact() {
       }}
     >
       {/* Section header */}
-      <div className="flex items-start gap-8 mb-20">
+      <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-8 mb-12 sm:mb-20">
         <AnimateIn>
           <span className="section-number select-none leading-none">04</span>
         </AnimateIn>
-        <div className="flex flex-col justify-end pt-12">
+        <div className="flex flex-col justify-end pt-0 sm:pt-12">
           <AnimateIn delay={100}>
             <span className="section-label mb-3 block">Contact</span>
           </AnimateIn>

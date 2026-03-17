@@ -22,6 +22,7 @@ export default function Navigation() {
 
   const handleNav = (href: string) => {
     setMenuOpen(false);
+    window.dispatchEvent(new CustomEvent('nav-scroll-unlock'));
     const el = document.querySelector(href);
     el?.scrollIntoView({ behavior: "smooth" });
   };

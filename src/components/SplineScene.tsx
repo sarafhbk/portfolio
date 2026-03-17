@@ -8,7 +8,6 @@ const SCENE_URL = 'https://prod.spline.design/b1pzvSd7idYj-1lC/scene.splinecode'
 
 function canLoadSpline(): boolean {
   if (typeof window === 'undefined') return false;
-  if (window.innerWidth < 768) return false;
   if (navigator.hardwareConcurrency <= 2) return false;
   const canvas = document.createElement('canvas');
   const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');

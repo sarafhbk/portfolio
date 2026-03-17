@@ -58,7 +58,7 @@ export default function About() {
             <p
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.15rem, 2.2vw, 1.45rem)",
+                fontSize: "clamp(1.4rem, 2.8vw, 1.8rem)",
                 color: "var(--text-primary)",
                 lineHeight: 1.7,
                 fontWeight: 300,
@@ -80,7 +80,7 @@ export default function About() {
                 <p
                   style={{
                     fontFamily: "var(--font-sans)",
-                    fontSize: "0.875rem",
+                    fontSize: "1.1rem",
                     color: "var(--text-primary)",
                     lineHeight: 1.6,
                   }}
@@ -90,7 +90,7 @@ export default function About() {
                 <p
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
+                    fontSize: "0.9rem",
                     color: "var(--text-secondary)",
                     marginTop: "0.4rem",
                     lineHeight: 1.5,
@@ -101,7 +101,7 @@ export default function About() {
                 <p
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.65rem",
+                    fontSize: "0.85rem",
                     color: "var(--text-tertiary)",
                     marginTop: "0.25rem",
                   }}
@@ -120,7 +120,7 @@ export default function About() {
                       className="flex items-center gap-3"
                       style={{
                         fontFamily: "var(--font-sans)",
-                        fontSize: "0.875rem",
+                        fontSize: "1.1rem",
                         color: "var(--text-secondary)",
                       }}
                     >
@@ -177,7 +177,7 @@ export default function About() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.65rem",
+                    fontSize: "0.85rem",
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
                     color: "var(--text-secondary)",
@@ -190,7 +190,7 @@ export default function About() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.65rem",
+                    fontSize: "0.85rem",
                     color: "var(--text-tertiary)",
                   }}
                   className="group-hover:text-accent transition-colors"
@@ -228,7 +228,7 @@ export default function About() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.65rem",
+                    fontSize: "0.85rem",
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
                     color: "var(--text-secondary)",
@@ -241,7 +241,7 @@ export default function About() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.65rem",
+                    fontSize: "0.85rem",
                     color: "var(--text-tertiary)",
                   }}
                   className="group-hover:text-accent transition-colors"
@@ -278,7 +278,7 @@ export default function About() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.65rem",
+                    fontSize: "0.85rem",
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
                     color: "var(--text-secondary)",
@@ -291,7 +291,7 @@ export default function About() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.65rem",
+                    fontSize: "0.85rem",
                     color: "var(--text-tertiary)",
                   }}
                   className="group-hover:text-accent transition-colors"
@@ -362,7 +362,7 @@ export default function About() {
                   <span
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.7rem",
+                      fontSize: "0.9rem",
                       color: "var(--text-secondary)",
                       letterSpacing: "0.06em",
                     }}
@@ -380,7 +380,7 @@ export default function About() {
                   <p
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-primary)",
                     }}
                   >
@@ -389,7 +389,7 @@ export default function About() {
                   <p
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.68rem",
+                      fontSize: "0.88rem",
                       color: "var(--text-secondary)",
                       marginTop: "0.2rem",
                     }}
@@ -402,7 +402,7 @@ export default function About() {
                   <p
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-primary)",
                     }}
                   >
@@ -411,7 +411,7 @@ export default function About() {
                   <p
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.68rem",
+                      fontSize: "0.88rem",
                       color: "var(--text-secondary)",
                       marginTop: "0.2rem",
                     }}
@@ -424,7 +424,7 @@ export default function About() {
                   <p
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-primary)",
                       lineHeight: 1.6,
                     }}
@@ -442,7 +442,7 @@ export default function About() {
                   href={`mailto:${profile.email}`}
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
+                    fontSize: "0.9rem",
                     color: "var(--accent)",
                     letterSpacing: "0.04em",
                     wordBreak: "break-all",
@@ -478,7 +478,7 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.65rem",
+                  fontSize: "0.85rem",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
                   color: "var(--text-secondary)",

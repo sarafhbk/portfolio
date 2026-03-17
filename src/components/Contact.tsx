@@ -53,7 +53,7 @@ export default function Contact() {
             <p
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.15rem, 2.2vw, 1.45rem)",
+                fontSize: "clamp(1.4rem, 2.8vw, 1.8rem)",
                 color: "var(--text-secondary)",
                 lineHeight: 1.75,
                 fontWeight: 300,
@@ -105,7 +105,7 @@ export default function Contact() {
                   <p
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.6rem",
+                      fontSize: "0.8rem",
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       color: "var(--text-tertiary)",
@@ -117,7 +117,7 @@ export default function Contact() {
                   <p
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-primary)",
                     }}
                     className="group-hover:text-accent transition-colors"
@@ -128,7 +128,7 @@ export default function Contact() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
+                    fontSize: "1.1rem",
                     color: "var(--text-tertiary)",
                   }}
                   className="group-hover:text-accent transition-colors"
@@ -173,7 +173,7 @@ export default function Contact() {
                   <p
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.6rem",
+                      fontSize: "0.8rem",
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       color: "var(--text-tertiary)",
@@ -185,7 +185,7 @@ export default function Contact() {
                   <p
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-primary)",
                     }}
                     className="group-hover:text-accent transition-colors"
@@ -196,7 +196,7 @@ export default function Contact() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
+                    fontSize: "1.1rem",
                     color: "var(--text-tertiary)",
                   }}
                   className="group-hover:text-accent transition-colors"
@@ -241,7 +241,7 @@ export default function Contact() {
                   <p
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.6rem",
+                      fontSize: "0.8rem",
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       color: "var(--text-tertiary)",
@@ -253,7 +253,7 @@ export default function Contact() {
                   <p
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-primary)",
                     }}
                     className="group-hover:text-accent transition-colors"
@@ -264,7 +264,7 @@ export default function Contact() {
                 <span
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
+                    fontSize: "1.1rem",
                     color: "var(--text-tertiary)",
                   }}
                   className="group-hover:text-accent transition-colors"
@@ -319,7 +319,7 @@ export default function Contact() {
               <h3
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "1.75rem",
+                  fontSize: "2.2rem",
                   fontWeight: 600,
                   color: "var(--text-primary)",
                   marginBottom: "0.75rem",
@@ -330,7 +330,7 @@ export default function Contact() {
               <p
                 style={{
                   fontFamily: "var(--font-sans)",
-                  fontSize: "0.875rem",
+                  fontSize: "1.1rem",
                   color: "var(--text-secondary)",
                 }}
               >
@@ -346,7 +346,7 @@ export default function Contact() {
                     style={{
                       display: "block",
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.6rem",
+                      fontSize: "0.8rem",
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       color: "var(--text-secondary)",
@@ -369,7 +369,7 @@ export default function Contact() {
                       borderBottom: "1px solid var(--border-bright)",
                       color: "var(--text-primary)",
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.9rem",
+                      fontSize: "1.1rem",
                       padding: "0.7rem 0",
                       outline: "none",
                       transition: "border-color 0.25s ease",
@@ -389,7 +389,7 @@ export default function Contact() {
                     style={{
                       display: "block",
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.6rem",
+                      fontSize: "0.8rem",
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       color: "var(--text-secondary)",
@@ -412,7 +412,7 @@ export default function Contact() {
                       borderBottom: "1px solid var(--border-bright)",
                       color: "var(--text-primary)",
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.9rem",
+                      fontSize: "1.1rem",
                       padding: "0.7rem 0",
                       outline: "none",
                       transition: "border-color 0.25s ease",
@@ -434,7 +434,7 @@ export default function Contact() {
                   style={{
                     display: "block",
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.6rem",
+                    fontSize: "0.8rem",
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     color: "var(--text-secondary)",
@@ -456,7 +456,7 @@ export default function Contact() {
                     borderBottom: "1px solid var(--border-bright)",
                     color: "var(--text-primary)",
                     fontFamily: "var(--font-sans)",
-                    fontSize: "0.9rem",
+                    fontSize: "1.1rem",
                     padding: "0.7rem 0",
                     outline: "none",
                     transition: "border-color 0.25s ease",
@@ -477,7 +477,7 @@ export default function Contact() {
                   style={{
                     display: "block",
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.6rem",
+                    fontSize: "0.8rem",
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     color: "var(--text-secondary)",
@@ -499,7 +499,7 @@ export default function Contact() {
                     borderBottom: "1px solid var(--border-bright)",
                     color: "var(--text-primary)",
                     fontFamily: "var(--font-sans)",
-                    fontSize: "0.9rem",
+                    fontSize: "1.1rem",
                     padding: "0.7rem 0",
                     outline: "none",
                     transition: "border-color 0.25s ease",
@@ -519,7 +519,7 @@ export default function Contact() {
                 <p
                   style={{
                     fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
+                    fontSize: "1.1rem",
                     color: "#f87171",
                   }}
                 >

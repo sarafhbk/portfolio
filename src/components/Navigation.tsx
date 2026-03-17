@@ -54,7 +54,7 @@ export default function Navigation() {
             <span
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.4rem, 2.5vw, 1.7rem)",
+                fontSize: "clamp(1.7rem, 3vw, 2.1rem)",
                 fontWeight: 600,
                 color: "var(--text-primary)",
                 lineHeight: 1,
@@ -86,7 +86,7 @@ export default function Navigation() {
                 padding: "0.5rem 1.3rem",
                 border: "1px solid var(--accent)",
                 fontFamily: "var(--font-mono)",
-                fontSize: "0.65rem",
+                fontSize: "0.85rem",
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 color: "var(--accent)",
@@ -155,7 +155,7 @@ export default function Navigation() {
             onClick={() => handleNav(link.href)}
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(2.8rem, 10vw, 5rem)",
+              fontSize: "clamp(3.5rem, 12vw, 6rem)",
               fontWeight: 600,
               color: "var(--text-primary)",
               letterSpacing: "-0.02em",
@@ -182,7 +182,7 @@ export default function Navigation() {
           href="mailto:saraffath@gmail.com"
           style={{
             fontFamily: "var(--font-mono)",
-            fontSize: "0.65rem",
+            fontSize: "0.85rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             color: "var(--accent)",
@@ -203,7 +203,7 @@ export default function Navigation() {
           <span
             style={{
               fontFamily: "var(--font-mono)",
-              fontSize: "0.6rem",
+              fontSize: "0.8rem",
               letterSpacing: "0.16em",
               textTransform: "uppercase",
               color: "var(--text-tertiary)",

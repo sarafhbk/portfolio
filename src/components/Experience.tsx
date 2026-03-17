@@ -33,7 +33,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
             alignItems: "center",
             padding: "0.2rem 0.6rem",
             fontFamily: "var(--font-mono)",
-            fontSize: "0.58rem",
+            fontSize: "0.78rem",
             letterSpacing: "0.16em",
             textTransform: "uppercase",
             color: "var(--accent)",
@@ -46,7 +46,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
         <span
           style={{
             fontFamily: "var(--font-mono)",
-            fontSize: "0.62rem",
+            fontSize: "1.02rem",
             color: "var(--text-tertiary)",
             letterSpacing: "0.04em",
           }}
@@ -59,7 +59,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
       <h3
         style={{
           fontFamily: "var(--font-display)",
-          fontSize: "clamp(1.2rem, 2.5vw, 1.65rem)",
+          fontSize: "clamp(1.5rem, 3vw, 2rem)",
           fontWeight: 600,
           color: "var(--text-primary)",
           lineHeight: 1.05,
@@ -74,7 +74,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
       <p
         style={{
           fontFamily: "var(--font-mono)",
-          fontSize: "0.6rem",
+          fontSize: "0.8rem",
           color: "var(--text-tertiary)",
           letterSpacing: "0.04em",
           marginBottom: "0.85rem",
@@ -92,7 +92,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
             gap: "0.4rem",
             padding: "0.25rem 0.7rem",
             fontFamily: "var(--font-mono)",
-            fontSize: "0.62rem",
+            fontSize: "1.02rem",
             color: "var(--text-secondary)",
             border: "1px solid var(--border-bright)",
             background: "var(--elevated)",
@@ -110,7 +110,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
       <p
         style={{
           fontFamily: "var(--font-sans)",
-          fontSize: "0.85rem",
+          fontSize: "1.05rem",
           color: "var(--text-secondary)",
           lineHeight: 1.7,
           marginBottom: "1rem",
@@ -128,7 +128,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
               className="flex items-start gap-2.5"
               style={{
                 fontFamily: "var(--font-sans)",
-                fontSize: "0.82rem",
+                fontSize: "1.02rem",
                 color: "var(--text-secondary)",
                 lineHeight: 1.6,
               }}
@@ -165,7 +165,7 @@ function ExperienceCard({ exp }: { exp: typeof experiences[0] }) {
             key={tech}
             style={{
               fontFamily: "var(--font-mono)",
-              fontSize: "0.6rem",
+              fontSize: "0.8rem",
               letterSpacing: "0.05em",
               padding: "0.2rem 0.55rem",
               color: "var(--accent)",
@@ -268,7 +268,7 @@ export default function Experience() {
                   <span
                     style={{
                       fontFamily: "var(--font-display)",
-                      fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
+                      fontSize: "clamp(3rem, 7vw, 5.5rem)",
                       fontWeight: 300,
                       color: "var(--text-tertiary)",
                       lineHeight: 1,

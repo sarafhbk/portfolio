@@ -37,7 +37,7 @@ export default function Footer() {
               <span
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
+                  fontSize: "clamp(2rem, 3.5vw, 2.8rem)",
                   fontWeight: 600,
                   color: "var(--text-primary)",
                   lineHeight: 1,
@@ -51,7 +51,7 @@ export default function Footer() {
             <p
               style={{
                 fontFamily: "var(--font-sans)",
-                fontSize: "0.875rem",
+                fontSize: "1.1rem",
                 color: "var(--text-secondary)",
                 lineHeight: 1.7,
               }}
@@ -67,7 +67,7 @@ export default function Footer() {
               <span
                 style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.6rem",
+                  fontSize: "0.8rem",
                   letterSpacing: "0.12em",
                   textTransform: "uppercase",
                   color: "var(--text-tertiary)",
@@ -85,7 +85,7 @@ export default function Footer() {
               <p
                 style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.6rem",
+                  fontSize: "0.8rem",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   color: "var(--accent)",
@@ -101,7 +101,7 @@ export default function Footer() {
                       href={`#${item.toLowerCase()}`}
                       style={{
                         fontFamily: "var(--font-sans)",
-                        fontSize: "0.875rem",
+                        fontSize: "1.1rem",
                         color: "var(--text-secondary)",
                         transition: "color 0.2s ease",
                       }}
@@ -124,7 +124,7 @@ export default function Footer() {
               <p
                 style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.6rem",
+                  fontSize: "0.8rem",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   color: "var(--accent)",
@@ -141,7 +141,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-secondary)",
                       transition: "color 0.2s ease",
                     }}
@@ -162,7 +162,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-secondary)",
                       transition: "color 0.2s ease",
                     }}
@@ -181,7 +181,7 @@ export default function Footer() {
                     href={`mailto:${profile.email}`}
                     style={{
                       fontFamily: "var(--font-sans)",
-                      fontSize: "0.875rem",
+                      fontSize: "1.1rem",
                       color: "var(--text-secondary)",
                       transition: "color 0.2s ease",
                     }}
@@ -203,7 +203,7 @@ export default function Footer() {
               <p
                 style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.6rem",
+                  fontSize: "0.8rem",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   color: "var(--accent)",
@@ -218,7 +218,7 @@ export default function Footer() {
                     href={`mailto:${profile.email}`}
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.7rem",
+                      fontSize: "0.9rem",
                       color: "var(--text-secondary)",
                       transition: "color 0.2s ease",
                       wordBreak: "break-all",
@@ -237,7 +237,7 @@ export default function Footer() {
                   <span
                     style={{
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.68rem",
+                      fontSize: "0.88rem",
                       color: "var(--text-tertiary)",
                     }}
                   >
@@ -261,7 +261,7 @@ export default function Footer() {
         <p
           style={{
             fontFamily: "var(--font-mono)",
-            fontSize: "0.65rem",
+            fontSize: "0.85rem",
             color: "var(--text-tertiary)",
             letterSpacing: "0.06em",
           }}
@@ -271,7 +271,7 @@ export default function Footer() {
         <p
           style={{
             fontFamily: "var(--font-mono)",
-            fontSize: "0.65rem",
+            fontSize: "0.85rem",
             color: "var(--text-tertiary)",
             letterSpacing: "0.06em",
           }}

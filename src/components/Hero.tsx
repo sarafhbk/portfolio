@@ -56,7 +56,7 @@ export default function Hero() {
         <span
           style={{
             fontFamily: "var(--font-mono)",
-            fontSize: "0.55rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
             color: "var(--text-tertiary)",

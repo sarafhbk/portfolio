@@ -92,7 +92,7 @@ export default function Skills() {
               <span
                 style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.65rem",
+                  fontSize: "0.85rem",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   color: "var(--accent)",
@@ -131,7 +131,7 @@ export default function Skills() {
               <span
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(2rem, 4vw, 3.5rem)",
+                  fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
                   fontWeight: 300,
                   fontStyle: "italic",
                   color: "var(--text-tertiary)",

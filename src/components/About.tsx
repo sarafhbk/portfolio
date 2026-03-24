@@ -5,14 +5,14 @@ import AnimateIn from "./AnimateIn";
 import WordReveal from "./WordReveal";
 
 const marqueeItems = [
-  "FRONTEND",
-  "REACT NATIVE",
-  "UI ARCHITECTURE",
-  "PERFORMANCE",
+  "FRONTEND SYSTEMS",
+  "PERFORMANCE ENGINEERING",
   "NEXT.JS",
+  "REACT NATIVE",
+  "ARCHITECTURE",
+  "REAL-TIME SYSTEMS",
   "TYPESCRIPT",
-  "DESIGN SYSTEMS",
-  "MENTORSHIP",
+  "PRODUCT ENGINEERING",
 ];
 
 export default function About() {

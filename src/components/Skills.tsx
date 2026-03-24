@@ -7,14 +7,14 @@ const techMarqueeItems = [
   "Next.js",
   "TypeScript",
   "React Native",
-  "Tailwind CSS",
+  "LCP Optimization",
   "Redux",
-  "Firebase",
-  "Jest",
-  "GitHub Actions",
+  "SSR / ISR",
   "Mapbox GL",
+  "GitHub Actions",
+  "Bundle Optimization",
   "Vercel",
-  "SCSS",
+  "Real-Time Systems",
 ];
 
 export default function Skills() {

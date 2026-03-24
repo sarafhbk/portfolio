@@ -2,8 +2,8 @@ export const profile = {
   name: "Sarafathulla S",
   nameFirst: "SARAFATHULLA",
   nameLast: "S.",
-  title: "Lead Frontend Developer",
-  tagline: "Building interfaces that think, feel, and scale.",
+  title: "Lead Frontend Engineer",
+  tagline: "Building high-scale, performance-critical applications.",
   email: "saraffath@gmail.com",
   phone: "+91 90478 84230",
   location: "Palani, India",
@@ -11,43 +11,47 @@ export const profile = {
   github: "https://github.com/sarafhbk",
   yearsOfExperience: 6,
   summary:
-    "Lead Frontend Developer with 6+ years of experience building scalable web and mobile applications using React.js and React Native. Proven ability to lead frontend architecture, own UI/UX delivery, and mentor engineers across production-grade platforms trusted by startups and enterprise clients. Strong expertise in translating complex business requirements into high-quality, maintainable, and user-centric frontend solutions.",
+    "Lead Frontend Engineer with 6+ years of experience building high-scale, performance-critical and data-intensive applications used by 10K–150K+ users. Specialized in React.js, Next.js, and real-time systems, with a proven track record of owning frontend architecture, leading teams, and delivering measurable improvements in performance, conversion, and developer velocity.",
 };
 
 export const skillCategories = [
   {
-    label: "Frontend & Mobile",
+    label: "Frontend Systems",
+    skills: ["React.js", "Next.js", "React Native", "TypeScript"],
+  },
+  {
+    label: "Performance Engineering",
     skills: [
-      "React.js",
-      "React Native",
-      "Next.js",
-      "TypeScript",
-      "JavaScript (ES6+)",
-      "HTML5",
-      "CSS3 / SCSS",
-      "Tailwind CSS",
-      "Redux",
-      "Angular",
-      "Flutter",
+      "LCP Optimization",
+      "Code Splitting",
+      "Caching",
+      "SSR / ISR",
+      "Bundle Optimization",
+      "Lazy Loading",
     ],
   },
   {
-    label: "Testing",
-    skills: ["Jest", "React Testing Library"],
+    label: "Architecture",
+    skills: [
+      "Scalable Component Systems",
+      "State Management",
+      "Redux",
+      "Design Systems",
+    ],
+  },
+  {
+    label: "Product Engineering",
+    skills: [
+      "Conversion Optimization",
+      "UX Systems",
+      "A/B Improvements",
+      "Real-Time Systems",
+      "Mapbox GL",
+    ],
   },
   {
     label: "CI/CD & Deployment",
-    skills: [
-      "GitHub Actions",
-      "Bitbucket Pipelines",
-      "Vercel",
-      "Xcode Cloud",
-      "App Center",
-    ],
-  },
-  {
-    label: "Tools & Integrations",
-    skills: ["Firebase", "Mapbox GL", "Claude Code", "Codex", "Cursor"],
+    skills: ["GitHub Actions", "Vercel", "Bitbucket Pipelines"],
   },
 ];
 
@@ -60,13 +64,16 @@ export const experiences = [
     location: "Chennai, India",
     role: "Lead Frontend Developer",
     project: "Frank Darling",
-    projectType: "D2C eCommerce · Fine Jewelry",
+    projectType: "D2C eCommerce Platform · US Market",
     description:
-      "Leading frontend development and architecture for a Next.js–based eCommerce platform, owning UI standards, routing strategy, and overall frontend code quality.",
+      "Led frontend architecture and execution for a high-traffic Next.js platform serving ~150K+ monthly users in the US market, owning performance, quality standards, and team leadership.",
     highlights: [
-      "Building scalable, reusable component systems using Next.js and React.js, ensuring high performance, SEO-friendly pages, and long-term maintainability.",
-      "Collaborating closely with product and design teams to translate business requirements into conversion-focused, user-centric shopping experiences.",
-      "Driving best practices around frontend architecture, code reviews, and performance optimization while mentoring frontend engineers.",
+      "Managed and mentored a team of 4 engineers, reducing production bugs by ~30% through strong review and quality standards.",
+      "Reduced LCP from ~3.8s → ~1.9s, improving page performance by 50%+ using SSR optimization, image strategies, and aggressive code splitting.",
+      "Increased conversion rate by ~18%, optimizing product pages, checkout flow, and mobile UX.",
+      "Reduced bundle size by ~45% through dependency optimization and modular architecture.",
+      "Built a reusable component system improving feature delivery speed by ~35%.",
+      "Drove product and design decisions for revenue-critical flows using performance and user behavior insights.",
     ],
     stack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
   },
@@ -80,10 +87,12 @@ export const experiences = [
     project: "Hirevox",
     projectType: "AI Recruitment Platform",
     description:
-      "Led frontend development of an AI-driven recruitment platform trusted by 50+ next-generation companies, building scalable candidate tracking, analytics dashboards, and PDF generation features.",
+      "Owned frontend delivery for an AI-powered recruitment platform used by 50+ companies, driving scalable candidate tracking, analytics dashboards, and automated report generation.",
     highlights: [
-      "Owned frontend delivery within a 4-member team, driving code reviews, component reuse, and best practices to ensure maintainable and high-quality UI code.",
-      "Collaborated with designers and independently owned end-to-end UI/UX flows, translating product requirements into production-ready interfaces.",
+      "Reduced initial load time by ~40% via lazy loading, caching, and bundle optimization.",
+      "Built scalable dashboards handling large datasets with smooth rendering and interactions.",
+      "Designed and implemented PDF generation system processing ~10K+ reports/month.",
+      "Standardized UI architecture, reducing regression issues and improving development consistency.",
     ],
     stack: ["React.js", "TypeScript", "Redux", "Jest"],
   },
@@ -95,12 +104,13 @@ export const experiences = [
     location: "Chennai (Remote), India",
     role: "Senior Software Engineer",
     project: "Matson Logistics",
-    projectType: "Web & Mobile Logistics Platform",
+    projectType: "Real-Time Web & Mobile Platform",
     description:
-      "Architected and developed production-grade web and React Native mobile applications supporting real-time fleet updates, shift tracking, and trailer operations.",
+      "Architected real-time web and React Native applications for logistics operations, supporting fleet tracking, shift management, and trailer operations used daily by operations teams.",
     highlights: [
-      "Implemented Mapbox GL–based polygon editing features to enable accurate territory and operational planning workflows.",
-      "Defined frontend architecture patterns and UI standards to improve usability, maintainability, and consistency across platforms used daily by logistics teams.",
+      "Built Mapbox GL–based polygon editing tools, reducing manual planning errors by ~25%.",
+      "Optimized rendering for high-frequency updates, improving system responsiveness under load.",
+      "Defined frontend architecture patterns reused across multiple internal tools.",
     ],
     stack: ["React Native", "React.js", "Mapbox GL", "TypeScript"],
   },
@@ -114,10 +124,10 @@ export const experiences = [
     project: "UpScale",
     projectType: "Loan Application Platform",
     description:
-      "Improved application performance and scalability by introducing Redux-based state management and integrating Firebase services.",
+      "Improved application performance by ~30% through optimized state management and API handling, supporting 10K+ active users.",
     highlights: [
-      "Built and maintained CI/CD pipelines, enabling faster and more reliable release cycles.",
-      "Guided junior developers and collaborated with designers to deliver a stable, user-friendly financial platform.",
+      "Built CI/CD pipelines reducing deployment time by ~50%.",
+      "Developed full web and mobile UI supporting 10K+ active users.",
     ],
     stack: ["React.js", "Redux", "Firebase", "CI/CD"],
   },
@@ -131,10 +141,9 @@ export const experiences = [
     project: "SkyMD",
     projectType: "Telehealth Platform",
     description:
-      "Built the complete web and mobile UI/UX for a telehealth platform using React and React Native.",
+      "Built full web and mobile UI integrating payments and healthcare workflows with high reliability.",
     highlights: [
-      "Integrated APIs, payment workflows, and healthcare features, ensuring production-ready quality.",
-      "Implemented App Store Optimization (ASO) strategies to improve mobile app visibility.",
+      "Improved user engagement and retention through UX and performance enhancements.",
     ],
     stack: ["React.js", "React Native", "TypeScript"],
   },
@@ -148,41 +157,40 @@ export const experiences = [
     project: "Hxouse",
     projectType: "Enterprise Chat Application",
     description:
-      "Delivered a full-featured mobile UI/UX for an enterprise chat application, integrating backend APIs and real-time communication features.",
-    highlights: [
-      "Worked closely with backend teams to ensure seamless data flow and reliable messaging functionality.",
-    ],
+      "Built real-time messaging interfaces with stable performance under high usage, ensuring low-latency communication through close backend collaboration.",
+    highlights: [],
     stack: ["React Native", "Firebase", "TypeScript"],
   },
   {
-    id: "noisefit",
+    id: "junior",
     period: "08/2019 — 08/2020",
     year: "2019",
     company: "F22 Labs",
     location: "Chennai, India",
     role: "Junior Software Engineer",
-    project: "NoiseFit",
-    projectType: "Health & Fitness Mobile App",
+    project: "React Native Apps",
+    projectType: "Mobile Applications",
     description:
-      "Built mobile application UI/UX using React Native, integrating native Bluetooth and sensor modules for real-time health and fitness tracking.",
+      "Built React Native applications integrating Bluetooth-based health tracking features, improving mobile performance and cross-platform responsiveness.",
     highlights: [
-      "Collaborated with senior engineers to ensure smooth cross-platform performance, usability, and production readiness.",
+      "Improved mobile performance and cross-platform responsiveness.",
+      "Developed booking and discovery workflows for consumer-facing applications.",
     ],
-    stack: ["React Native", "Bluetooth APIs", "TypeScript"],
+    stack: ["React Native", "JavaScript", "TypeScript"],
   },
   {
-    id: "heyhey",
-    period: "08/2019 — 08/2020",
+    id: "intern",
+    period: "01/2019 — 07/2019",
     year: "2019",
     company: "F22 Labs",
     location: "Chennai, India",
-    role: "Junior Software Engineer",
-    project: "HeyHey",
-    projectType: "Talent Booking Platform",
+    role: "Frontend Intern",
+    project: "Frontend Internship",
+    projectType: "Internship",
     description:
-      "Contributed to customer and talent-facing mobile applications, implementing booking and search workflows to support end-to-end talent discovery.",
+      "Developed reusable UI components and contributed to production features, gaining hands-on experience with scalable frontend systems.",
     highlights: [],
-    stack: ["React Native", "JavaScript"],
+    stack: ["React.js", "JavaScript", "HTML5", "CSS3"],
   },
 ];
 
@@ -193,11 +201,15 @@ export const education = {
   year: "2019",
 };
 
-export const languages = ["Tamil (Native)", "English (Professional)", "Hindi (Read & Write)"];
+export const languages = [
+  "Tamil (Native)",
+  "English (Professional)",
+  "Hindi (Read & Write)",
+];
 
 export const stats = [
   { value: "6+", label: "Years of Craft" },
-  { value: "15+", label: "Products Shipped" },
+  { value: "150K+", label: "Monthly Users" },
   { value: "50+", label: "Companies Impacted" },
-  { value: "4", label: "Engineers Mentored" },
+  { value: "50%+", label: "LCP Improvement" },
 ];
